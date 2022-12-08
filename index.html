@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Signature ID Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <h1>
+            Deep Signature ID Generator
+        </h1>
+    </header>
+    
+    <!-- <label for="Options">Choose:</label> -->
+
+<!-- <select id="Options">
+  <option value="DMY">Day month year</option>
+  <option value="DYM">Day year month</option>
+  <option value="MDY">month day year</option>
+  <option value="MYD">Month year day</option>
+  <option value="YMD">year month day</option>     
+  <option value="YDM">year day month</option>
+</select> -->
+
+    <!-- <section>
+        <label>Characters You Choose:</label> 
+        <input type="text" id="qr-data" onchange="generateQR()"> 
+        <button type="submit" class="generateBtn">Generate</button>
+        <div id="qrcode"></div>
+    </section>  -->
+    
+    <!-- Data Custom -->
+    <form action="">Custom Options: (recommmend: characters, letters and numbers)</label> <br>
+            <input type="text" name="Custom option" id="customoptions">
+        <br>
+    </form>
+    <form action="">Number of codes to export</label> <br>
+        <input type="number" name="numberofcodes" id="numberofcodes">
+    <br>
+    <button id="btn1">Submit</button>
+    </form>
+   
+   
+    <!-- tag select -->
+    <h1>Sort by trial order</h1>
+<form>
+    <label for="option1">Option 1</label>
+    <select id="lc1" > 
+        <option value="1">Random Capital Characters</option>
+        <option value="11">Random Lower Case Character</option>
+        <option value="12">Random Number</option>
+        <option value="8">numerical Order</option>
+        <option value="2">Day</option>
+        <option value="3">Month</option>
+        <option value="4">Year</option>
+        <option value="5">Hour</option>
+        <option value="6">Minute</option>
+        <option value="7">Second</option>
+        <option value="9">Custom option</option>
+        <option value="10">None</option>
+    </select>
+    <label for="option2">Option 2</label>
+    <select id="lc2">
+        <option value="11">Random Lower Case Character</option>
+        <option value="1">Random Capital Characters</option>
+        <option value="12">Random Number</option>
+        <option value="8">numerical Order</option>
+        <option value="2">Day</option>
+        <option value="3">Month</option>
+        <option value="4">Year</option>
+        <option value="5">Hour</option>
+        <option value="6">Minute</option>
+        <option value="7">Second</option>
+        <option value="9">Custom option</option>
+        <option value="10">None</option>
+    </select>
+    <label for="option3">Option 3</label>
+    <select id="lc3">
+        <option value="12">Random Number</option>
+        <option value="1">Random Capital Characters</option>
+        <option value="11">Random Lower Case Character</option>
+        <option value="8">numerical Order</option>
+        <option value="2">Day</option>
+        <option value="3">Month</option>
+        <option value="4">Year</option>
+        <option value="5">Hour</option>
+        <option value="6">Minute</option>
+        <option value="7">Second</option>
+        <option value="9">Custom option</option>
+        <option value="10">None</option>
+    </select>
+    <label for="option4">Option 4</label>
+    <select id="lc4">
+        <option value="8">numerical Order</option>
+        <option value="1">Random Capital Characters</option>
+        <option value="11">Random Lower Case Character</option>
+        <option value="12">Random Number</option>
+        <option value="2">Day</option>
+        <option value="3">Month</option>
+        <option value="4">Year</option>
+        <option value="5">Hour</option>
+        <option value="6">Minute</option>
+        <option value="7">Second</option>
+        <option value="9">Custom option</option>
+        <option value="10">None</option>
+    </select>
+    <label for="option5">Option 5</label>
+    <select id="lc5">
+        <option value="10">None</option>
+        <option value="1">Random Capital Characters</option>
+        <option value="2">Day</option>
+        <option value="3">Month</option>
+        <option value="4">Year</option>
+        <option value="5">Hour</option>
+        <option value="6">Minute</option>
+        <option value="7">Second</option>
+        <option value="8">numerical Order</option>
+        <option value="9">Custom option</option>
+        <option value="11">Random Lower Case Character</option>
+        <option value="12">Random Number</option>
+    </select>
+    <label for="option6">Option 6</label>
+    <select id="lc6">
+        <option value="10">None</option>
+        <option value="1">Random Capital Characters</option>
+        <option value="2">Day</option>
+        <option value="3">Month</option>
+        <option value="4">Year</option>
+        <option value="5">Hour</option>
+        <option value="6">Minute</option>
+        <option value="7">Second</option>
+        <option value="8">numerical Order</option>
+        <option value="9">Custom option</option>
+        <option value="11">Random Lower Case Character</option>
+        <option value="12">Random Number</option>
+    </select>
+    <label for="option7">Option 7</label>
+    <select id="lc7">
+        <option value="10">None</option>
+        <option value="1">Random Capital Characters</option>
+        <option value="2">Day</option>
+        <option value="3">Month</option>
+        <option value="4">Year</option>
+        <option value="5">Hour</option>
+        <option value="6">Minute</option>
+        <option value="7">Second</option>
+        <option value="8">numerical Order</option>
+        <option value="9">Custom option</option>
+        <option value="11">Random Lower Case Character</option>
+        <option value="12">Random Number</option>
+    </select>
+    <label for="option8">Option 8</label>
+    <select id="lc8">
+        <option value="10">None</option>
+        <option value="1">Random Capital Characters</option>
+        <option value="2">Day</option>
+        <option value="3">Month</option>
+        <option value="4">Year</option>
+        <option value="5">Hour</option>
+        <option value="6">Minute</option>
+        <option value="7">Second</option>
+        <option value="8">numerical Order</option>
+        <option value="9">Custom option</option>
+        <option value="11">Random Lower Case Character</option>
+        <option value="12">Random Number</option>
+    </select>
+    <label for="option9">Option 9</label>
+    <select id="lc9">
+        <option value="10">None</option>
+        <option value="1">Random Capital Characters</option>
+        <option value="2">Day</option>
+        <option value="3">Month</option>
+        <option value="4">Year</option>
+        <option value="5">Hour</option>
+        <option value="6">Minute</option>
+        <option value="7">Second</option>
+        <option value="8">numerical Order</option>
+        <option value="9">Custom option</option>
+        <option value="11">Random Lower Case Character</option>
+        <option value="12">Random Number</option>
+    </select>
+    <label for="option10">Option 10</label>
+    <select id="lc10">
+        <option value="10">None</option>
+        <option value="1">Random Capital Characters</option>
+        <option value="2">Day</option>
+        <option value="3">Month</option>
+        <option value="4">Year</option>
+        <option value="5">Hour</option>
+        <option value="6">Minute</option>
+        <option value="7">Second</option>
+        <option value="8">numerical Order</option>
+        <option value="9">Custom option</option>
+        <option value="11">Random Lower Case Character</option>
+        <option value="12">Random Number</option>
+    </select>
+    <label for="option11">Option 11</label>
+    <select id="lc11">
+        <option value="10">None</option>
+        <option value="1">Random Capital Characters</option>
+        <option value="2">Day</option>
+        <option value="3">Month</option>
+        <option value="4">Year</option>
+        <option value="5">Hour</option>
+        <option value="6">Minute</option>
+        <option value="7">Second</option>
+        <option value="8">numerical Order</option>
+        <option value="9">Custom option</option>
+        <option value="11">Random Lower Case Character</option>
+        <option value="12">Random Number</option>
+    </select>
+    <label for="option12">Option 12</label>
+    <select id="lc12">
+        <option value="10">None</option>
+        <option value="1">Random Capital Characters</option>
+        <option value="2">Day</option>
+        <option value="3">Month</option>
+        <option value="4">Year</option>
+        <option value="5">Hour</option>
+        <option value="6">Minute</option>
+        <option value="7">Second</option>
+        <option value="8">numerical Order</option>
+        <option value="9">Custom option</option>
+        <option value="11">Random Lower Case Character</option>
+        <option value="12">Random Number</option>
+    </select>
+    <button id="btn2">Generate</button>
+</form>
+
+    <button id="btn3">Copy Code</button>
+    
+</body>
+
+<p id="text1"></p>
+
+ <!-- <script src="./qrcode.min.js"></script> -->
+ <script src="./script.js"></script>
+<!-- <script>
+    var qrData = document.getElementById('qr-data');
+    var qrCode = new QRCode(document.getElementById('qrcode'));
+    --
+    
+    function generateQR() {
+        var data = qrData.value;
+    }
+    qrCode.makeCode(idCode);  
+
+</script>
+
+</html>
+
+

@@ -1,0 +1,22 @@
+select {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background: transparent;
+    width: 268px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 16px;
+    line-height: 1;
+    height: 34px;
+    /* -webkit-appearance: none; day la nut mui ten trong tag select */
+}
+
+#btn1 #btn2 #btn3 {
+    color:black;
+    background-color: gray;
+    border-radius: 5px;
+    padding:10px;
+    margin: 10px 0 10px 0;
+    font-size: 16px;
+}
